@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+    grid-gap: 10px;    
+    text-align: center;
+    padding: 10px;
+}
+
+#container input[type = text]{
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+    margin: auto;
+}
+#container input[type = button]{
+    text-transform: uppercase;
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#homenagem{
+    background-image: url(img/fundo0.jpg); 
+    background-size: contain;
+    background-repeat: no-repeat;  
+    background-position: center;
+    margin: auto;        
+    width: 90%;
+    height: 350px;    
+    
+}
+
+#mae{
+    text-transform: capitalize;
+}
+
+#texto{
+    text-transform: capitalize;
+}
