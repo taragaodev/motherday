@@ -1,3 +1,6 @@
+body{
+    background: black;
+}
 *{
     margin: 0;
     outline: 0;
@@ -6,27 +9,38 @@
 }
 
 #container{
+    width: 500px;
+    margin: auto;
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-gap: 10px;    
     text-align: center;
     padding: 10px;
 }
 
 #container input[type = text]{
-    text-transform: capitalize;
-    text-align: center;
-    border-radius: 10px;
-    width: 70%;
-    height: 30px;
     margin: auto;
+    width: 70%;
+    height: 40px;
+    font-size: 18px;    
+    text-align: center;
+    text-transform: capitalize;     
+    border-top: 5px solid rgb(167, 8, 61);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
 }
 #container input[type = button]{
     text-transform: uppercase;
     width: 30%;
-    height: 30px;
+    height: 40px;
     margin: auto;
-    border-radius: 10px;
-    background-color: transparent;
+    border-radius: 10px;    
+    background-color: rgb(167, 8, 61);
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }
 
 #homenagem{
@@ -35,15 +49,242 @@
     background-repeat: no-repeat;  
     background-position: center;
     margin: auto;        
-    width: 90%;
-    height: 350px;    
+    width: 100%;
+    height: 550px;    
     
 }
 
 #mae{
     text-transform: capitalize;
+    color: white;
 }
 
 #texto{
     text-transform: capitalize;
+    color: white;
+}
+
+@media screen and (min-width: 360px) { 
+    #container{
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;    
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #container input[type = text]{
+        margin: auto;
+        width: 70%;
+        height: 40px;
+        font-size: 18px;    
+        text-align: center;
+        text-transform: capitalize;     
+        border-top: 5px solid rgb(167, 8, 61);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #container input[type = button]{
+        text-transform: uppercase;
+        width: 30%;
+        height: 40px;
+        margin: auto;
+        border-radius: 10px;    
+        background-color: rgb(167, 8, 61);
+        font-weight: bold;
+        font-size: 14px;
+        color: white;
+    }
+    
+    #homenagem{
+        background-image: url(img/fundo0.jpg); 
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position: center;
+        margin: auto;        
+        width: 100%;
+        height: 450px;            
+    }
+
+    #mae{
+        text-transform: capitalize;
+        color: white;
+        font-size: 20px;
+    }
+    
+    #texto{
+        text-transform: capitalize;
+        color: white;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 411px) { 
+    #container{
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;    
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #container input[type = text]{
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        font-size: 20px;    
+        text-align: center;
+        text-transform: capitalize;     
+        border-top: 5px solid rgb(167, 8, 61);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #container input[type = button]{
+        text-transform: uppercase;
+        width: 30%;
+        height: 50px;
+        margin: auto;
+        border-radius: 10px;    
+        background-color: rgb(167, 8, 61);
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+    }
+    
+    #homenagem{
+        background-image: url(img/fundo0.jpg); 
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position: center;
+        margin: auto;        
+        width: 100%;
+        height: 480px;    
+        
+    }
+}
+@media screen and (min-width: 1024px) {     
+    #container{
+        width: 100vw;
+        height: 80vh;
+        margin: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;    
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #container input[type = text]{
+        margin: auto;
+        width: 50%;
+        height: 60px;
+        font-size: 24px;    
+        text-align: center;
+        text-transform: capitalize;     
+        border-top: 5px solid rgb(167, 8, 61);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #container input[type = button]{
+        text-transform: uppercase;
+        width: 30%;
+        height: 60px;
+        margin: auto;
+        border-radius: 10px;    
+        background-color: rgb(167, 8, 61);
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+    
+    #homenagem{
+        background-image: url(img/fundo0.jpg); 
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position: center;
+        margin: auto;        
+        width: 100%;
+        height: 950px;            
+    }
+
+    #mae{
+        text-transform: capitalize;
+        color: white;
+        font-size: 30px;
+    }
+    
+    #texto{
+        text-transform: capitalize;
+        color: white;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1360px) {     
+    #container{
+        width: 100%;        
+        height: 100%;
+        margin: auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;    
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #container input[type = text]{
+        margin: auto;
+        width: 50%;
+        height: 60px;
+        font-size: 24px;    
+        text-align: center;
+        text-transform: capitalize;     
+        border-top: 5px solid rgb(167, 8, 61);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #container input[type = button]{
+        text-transform: uppercase;
+        width: 30%;
+        height: 60px;
+        margin: auto;
+        border-radius: 10px;    
+        background-color: rgb(167, 8, 61);
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+    
+    #homenagem{
+        background-image: url(img/fundo0.jpg); 
+        background-size: contain;
+        background-repeat: no-repeat;  
+        background-position: center;
+        margin: auto;        
+        width: 100%;
+        height: 500px;            
+    }
+
+    #mae{
+        text-transform: capitalize;
+        color: white;
+        font-size: 30px;
+    }
+    
+    #texto{
+        text-transform: capitalize;
+        color: white;
+        font-size: 28px;
+    }
 }
